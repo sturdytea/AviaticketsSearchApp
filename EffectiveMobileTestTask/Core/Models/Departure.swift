@@ -10,3 +10,9 @@
     
 
 import Foundation
+
+struct Departure {
+    let town: String
+    let date: Date
+    let airport: String
+}

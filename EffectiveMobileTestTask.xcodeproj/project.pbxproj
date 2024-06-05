@@ -77,6 +77,18 @@
 		B854610D2C0F032F00F69D18 /* BriefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B854610C2C0F032F00F69D18 /* BriefView.swift */; };
 		B854610F2C0F036600F69D18 /* SubscribesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B854610E2C0F036600F69D18 /* SubscribesView.swift */; };
 		B85461112C0F038500F69D18 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85461102C0F038500F69D18 /* ProfileView.swift */; };
+		B85461162C0F0AF400F69D18 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85461152C0F0AF300F69D18 /* Offer.swift */; };
+		B85461182C0F0B0000F69D18 /* TicketsOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85461172C0F0B0000F69D18 /* TicketsOffer.swift */; };
+		B854611A2C0F0B1800F69D18 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85461192C0F0B1800F69D18 /* Ticket.swift */; };
+		B854611C2C0F0D2F00F69D18 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = B854611B2C0F0D2F00F69D18 /* Price.swift */; };
+		B854611E2C0F0DCD00F69D18 /* Departure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B854611D2C0F0DCD00F69D18 /* Departure.swift */; };
+		B85461202C0F0F3500F69D18 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = B854611F2C0F0F3500F69D18 /* Arrival.swift */; };
+		B85461222C0F0F5100F69D18 /* Luggage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85461212C0F0F5100F69D18 /* Luggage.swift */; };
+		B85461252C0F0F6E00F69D18 /* HandLuggage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85461242C0F0F6E00F69D18 /* HandLuggage.swift */; };
+		B85461272C0F11C300F69D18 /* AviaticketsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85461262C0F11C300F69D18 /* AviaticketsViewModel.swift */; };
+		B854612A2C0F128B00F69D18 /* AviaticketsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85461292C0F128B00F69D18 /* AviaticketsService.swift */; };
+		B854612C2C0F2C2F00F69D18 /* OfferCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B854612B2C0F2C2F00F69D18 /* OfferCollectionViewCell.swift */; };
+		B854612E2C0F2F4700F69D18 /* InputBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B854612D2C0F2F4700F69D18 /* InputBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -152,6 +164,18 @@
 		B854610C2C0F032F00F69D18 /* BriefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefView.swift; sourceTree = "<group>"; };
 		B854610E2C0F036600F69D18 /* SubscribesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribesView.swift; sourceTree = "<group>"; };
 		B85461102C0F038500F69D18 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B85461152C0F0AF300F69D18 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		B85461172C0F0B0000F69D18 /* TicketsOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsOffer.swift; sourceTree = "<group>"; };
+		B85461192C0F0B1800F69D18 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		B854611B2C0F0D2F00F69D18 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		B854611D2C0F0DCD00F69D18 /* Departure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departure.swift; sourceTree = "<group>"; };
+		B854611F2C0F0F3500F69D18 /* Arrival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
+		B85461212C0F0F5100F69D18 /* Luggage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Luggage.swift; sourceTree = "<group>"; };
+		B85461242C0F0F6E00F69D18 /* HandLuggage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandLuggage.swift; sourceTree = "<group>"; };
+		B85461262C0F11C300F69D18 /* AviaticketsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviaticketsViewModel.swift; sourceTree = "<group>"; };
+		B85461292C0F128B00F69D18 /* AviaticketsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviaticketsService.swift; sourceTree = "<group>"; };
+		B854612B2C0F2C2F00F69D18 /* OfferCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCollectionViewCell.swift; sourceTree = "<group>"; };
+		B854612D2C0F2F4700F69D18 /* InputBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +189,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8151AC42C109D4600562011 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B854612B2C0F2C2F00F69D18 /* OfferCollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
 		B854605F2C0D8F2A00F69D18 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				B85460862C0E441200F69D18 /* Common */,
+				B85461122C0F088000F69D18 /* Core */,
 				B85460852C0E43F800F69D18 /* Modules */,
 				B854606B2C0D8F2A00F69D18 /* AppDelegate.swift */,
 				B85460812C0E428E00F69D18 /* AppCoordinator.swift */,
@@ -231,6 +264,7 @@
 			children = (
 				B854608D2C0E44A900F69D18 /* AviaticketsCoordinator.swift */,
 				B854608F2C0E456200F69D18 /* AviaticketsViewController.swift */,
+				B85461262C0F11C300F69D18 /* AviaticketsViewModel.swift */,
 				B85460912C0E478B00F69D18 /* Views */,
 			);
 			path = Aviatickets;
@@ -280,6 +314,8 @@
 			isa = PBXGroup;
 			children = (
 				B85460922C0E47A400F69D18 /* AviaticketsView.swift */,
+				B854612D2C0F2F4700F69D18 /* InputBox.swift */,
+				B8151AC42C109D4600562011 /* CollectionViewCells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -345,6 +381,30 @@
 				B85460A42C0E4D7C00F69D18 /* SF-Pro.ttf */,
 			);
 			path = "SF-Pro-Display";
+			sourceTree = "<group>";
+		};
+		B85461122C0F088000F69D18 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B85461292C0F128B00F69D18 /* AviaticketsService.swift */,
+				B85461142C0F0AA900F69D18 /* Models */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B85461142C0F0AA900F69D18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B85461152C0F0AF300F69D18 /* Offer.swift */,
+				B85461172C0F0B0000F69D18 /* TicketsOffer.swift */,
+				B85461192C0F0B1800F69D18 /* Ticket.swift */,
+				B854611B2C0F0D2F00F69D18 /* Price.swift */,
+				B854611D2C0F0DCD00F69D18 /* Departure.swift */,
+				B854611F2C0F0F3500F69D18 /* Arrival.swift */,
+				B85461212C0F0F5100F69D18 /* Luggage.swift */,
+				B85461242C0F0F6E00F69D18 /* HandLuggage.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,26 +525,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B85461162C0F0AF400F69D18 /* Offer.swift in Sources */,
 				B85461092C0EF92E00F69D18 /* SubscribesViewController.swift in Sources */,
+				B854612E2C0F2F4700F69D18 /* InputBox.swift in Sources */,
 				B85460842C0E431A00F69D18 /* NavBarCoordinator.swift in Sources */,
+				B85461272C0F11C300F69D18 /* AviaticketsViewModel.swift in Sources */,
 				B854610B2C0F01DA00F69D18 /* HotelsView.swift in Sources */,
 				B854610D2C0F032F00F69D18 /* BriefView.swift in Sources */,
 				B85460932C0E47A400F69D18 /* AviaticketsView.swift in Sources */,
 				B85460FF2C0EF7D300F69D18 /* BriefCoordinator.swift in Sources */,
+				B854612C2C0F2C2F00F69D18 /* OfferCollectionViewCell.swift in Sources */,
 				B85460822C0E428E00F69D18 /* AppCoordinator.swift in Sources */,
 				B85461032C0EF8C900F69D18 /* SubscribesCoordinator.swift in Sources */,
 				B85460FB2C0EF74600F69D18 /* HotelsViewController.swift in Sources */,
 				B854606C2C0D8F2A00F69D18 /* AppDelegate.swift in Sources */,
 				B85460FD2C0EF76000F69D18 /* HotelsCoordinator.swift in Sources */,
 				B85461052C0EF8F400F69D18 /* ProfileCoordinator.swift in Sources */,
+				B854612A2C0F128B00F69D18 /* AviaticketsService.swift in Sources */,
 				B85461112C0F038500F69D18 /* ProfileView.swift in Sources */,
+				B85461222C0F0F5100F69D18 /* Luggage.swift in Sources */,
 				B85461012C0EF7E000F69D18 /* BriefViewController.swift in Sources */,
 				B85460952C0E48D300F69D18 /* UIColor.swift in Sources */,
 				B854608E2C0E44A900F69D18 /* AviaticketsCoordinator.swift in Sources */,
+				B85461202C0F0F3500F69D18 /* Arrival.swift in Sources */,
+				B854611C2C0F0D2F00F69D18 /* Price.swift in Sources */,
 				B85461072C0EF91500F69D18 /* ProfileViewController.swift in Sources */,
+				B854611E2C0F0DCD00F69D18 /* Departure.swift in Sources */,
+				B85461182C0F0B0000F69D18 /* TicketsOffer.swift in Sources */,
 				B85460902C0E456200F69D18 /* AviaticketsViewController.swift in Sources */,
+				B854611A2C0F0B1800F69D18 /* Ticket.swift in Sources */,
 				B85460972C0E4C2300F69D18 /* UIFont.swift in Sources */,
 				B854610F2C0F036600F69D18 /* SubscribesView.swift in Sources */,
+				B85461252C0F0F6E00F69D18 /* HandLuggage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

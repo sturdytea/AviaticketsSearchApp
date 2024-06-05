@@ -1,6 +1,6 @@
 //
 //
-// TicketOffer.swift
+// TicketsOffer.swift
 // EffectiveMobileTestTask
 //
 // Created by sturdytea on 04.06.2024.
@@ -11,11 +11,11 @@
 
 import Foundation
 
-struct TicketOfferResponse {
-    let 
+struct TicketsOfferResponse {
+    let ticketsOffers: [TicketsOffer]
 }
 
-struct TicketOffer {
+struct TicketsOffer {
     let id: Int
     let title: String
     let timeRange: [String]

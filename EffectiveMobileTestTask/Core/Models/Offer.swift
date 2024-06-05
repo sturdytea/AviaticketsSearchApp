@@ -1,6 +1,6 @@
 //
 //
-// Arrival.swift
+// Offer.swift
 // EffectiveMobileTestTask
 //
 // Created by sturdytea on 04.06.2024.
@@ -11,8 +11,13 @@
 
 import Foundation
 
-struct Arrival {
+struct OfferResponse {
+    let offers: [Offer]
+}
+
+struct Offer {
+    let id: Int
+    let title: String
     let town: String
-    let date: Date
-    let airport: String
+    let price: Price
 }

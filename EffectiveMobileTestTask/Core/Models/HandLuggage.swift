@@ -10,3 +10,18 @@
     
 
 import Foundation
+
+struct HandLuggage {
+    let hasHandLuggage: Bool
+    let size: String?
+    
+    init(hasHandLuggage: Bool, size: String?) {
+        self.hasHandLuggage = hasHandLuggage
+        self.size = size
+    }
+    
+    init(hasHandLuggage: Bool) {
+        self.hasHandLuggage = hasHandLuggage
+        self.size = nil
+    }
+}
