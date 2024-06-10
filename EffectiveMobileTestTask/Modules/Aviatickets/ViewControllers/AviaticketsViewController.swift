@@ -24,6 +24,12 @@ class AviaticketsViewController: UIViewController {
         super.viewDidLoad()
         viewModel.fetchData()
         setupCollectionView()
+        aviaticketsView.inputBox.arrivalField.addTarget(self, action: #selector(arrivalFieldTapped), for: .allTouchEvents)
+    }
+    
+    @objc
+    private func arrivalFieldTapped() {
+        print("Tapped")
     }
 }
 

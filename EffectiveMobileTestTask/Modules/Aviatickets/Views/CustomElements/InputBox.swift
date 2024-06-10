@@ -37,7 +37,7 @@ class InputBox: UIView {
         return textField
     }()
     
-    private lazy var arrivalField: UITextField = {
+    lazy var arrivalField: UITextField = {
         let textField = UITextField()
         textField.attributedPlaceholder = NSAttributedString(
             string: cityOfArrivalPlaceholder,
@@ -109,21 +109,21 @@ class InputBox: UIView {
     }
     
     private func configure(_ type: BoxType) {
+        // TODO: Add shadows
+        layer.cornerRadius = 16
+        translatesAutoresizingMaskIntoConstraints = false
         
         switch type {
         case .main:
-            // TODO: Add BoxBackground 
+            // TODO: Add BoxBackground
+            backgroundColor = .greyFour
             heightAnchor.constraint(equalToConstant: 90).isActive = true
         case .search:
-            break
+            backgroundColor = .greyTwo
+            heightAnchor.constraint(equalToConstant: 96).isActive = true
         case .choosen:
             break
         }
-        
-        // TODO: Add shadows
-        backgroundColor = .greyFour
-        layer.cornerRadius = 16
-        translatesAutoresizingMaskIntoConstraints = false
     }
     
     private func setupViews(_ type: BoxType) {
@@ -135,32 +135,53 @@ class InputBox: UIView {
         case .main:
             addSubview(searchIcon)
         case .search:
-            break
+            addSubview(planeIcon)
+            addSubview(searchIcon)
+            addSubview(closeIcon)
         case .choosen:
             break
         }
     }
     
     private func setupConstraints(_ type: BoxType) {
+        NSLayoutConstraint.activate([
+            departureField.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -20),
+            
+            arrivalField.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 20),
+            
+            divider.centerYAnchor.constraint(equalTo: centerYAnchor),
+            divider.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+        ])
         
         switch type {
         case .main:
             NSLayoutConstraint.activate([
-                departureField.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -20),
                 departureField.leadingAnchor.constraint(equalTo: searchIcon.trailingAnchor, constant: 16),
+                
+                arrivalField.leadingAnchor.constraint(equalTo: searchIcon.trailingAnchor, constant: 16),
                 
                 searchIcon.centerYAnchor.constraint(equalTo: centerYAnchor),
                 searchIcon.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
                 
-                divider.centerYAnchor.constraint(equalTo: centerYAnchor),
                 divider.leadingAnchor.constraint(equalTo: searchIcon.trailingAnchor, constant: 16),
-                divider.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-                
-                arrivalField.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 20),
-                arrivalField.leadingAnchor.constraint(equalTo: searchIcon.trailingAnchor, constant: 16),
             ])
         case .search:
-            break
+            NSLayoutConstraint.activate([
+                departureField.leadingAnchor.constraint(equalTo: planeIcon.trailingAnchor, constant: 16),
+                
+                arrivalField.leadingAnchor.constraint(equalTo: searchIcon.trailingAnchor, constant: 16),
+                
+                planeIcon.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -20),
+                planeIcon.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+                
+                searchIcon.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 20),
+                searchIcon.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+                
+                closeIcon.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 20),
+                closeIcon.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+                
+                divider.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            ])
         case .choosen:
             break
         }

@@ -20,7 +20,7 @@ extension UIColor {
     
     static let greyTwo = UIColor(red: 47/255, green: 48/255, blue: 53/255, alpha: 1.0)
     
-    static let greyThree = UIColor(red: 47/255, green: 48/255, blue: 53/255, alpha: 1.0)
+    static let greyThree = UIColor(red: 36/255, green: 37/255, blue: 41/255, alpha: 1.0)
     
     static let greyFour = UIColor(red: 62/255, green: 63/255, blue: 67/255, alpha: 1.0)
     
