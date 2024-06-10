@@ -13,12 +13,25 @@ import UIKit
 
 class WeekendsView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    private lazy var pageName: UILabel = {
+        let label = UILabel()
+        label.text = "Выходные"
+        label.font = .customFont(.titleTwo)
+        label.textColor = .greySix
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        addSubview(pageName)
+        NSLayoutConstraint.activate([
+            pageName.centerXAnchor.constraint(equalTo: centerXAnchor),
+            pageName.centerYAnchor.constraint(equalTo: centerYAnchor),
+        ])
     }
-    */
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }

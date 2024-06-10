@@ -10,3 +10,13 @@
     
 
 import Foundation
+
+struct RecommendedTownResponse {
+    let towns: [RecommendedTown]
+}
+
+struct RecommendedTown {
+    let id: Int
+    let town: String
+    let comment: String
+}

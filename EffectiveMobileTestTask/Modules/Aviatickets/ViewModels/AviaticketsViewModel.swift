@@ -28,10 +28,8 @@ class AviaticketsViewModel {
             switch result {
             case .success(let offerResponse):
                 self?.offers = offerResponse.offers
-                print("ViewModel fetchData - success")
             case .failure(let error):
                 self?.error = error
-                print("ViewModel fetchData - failure")
             }
         }
     }

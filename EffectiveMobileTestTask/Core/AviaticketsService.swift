@@ -15,6 +15,7 @@ protocol AviaticketsServicing {
     func getOffers(_ completion: @escaping (Result<OfferResponse, Error>) -> Void)
     func getTicketsOffers(_ completion: @escaping (Result<TicketsOfferResponse, Error>) -> Void)
     func getTickets(_ completion: @escaping (Result<TicketResponse, Error>) -> Void)
+    func getRecommendedTowns( completion: @escaping (Result<RecommendedTownResponse, Error>) -> Void)
 }
 
 class AviaticketsMockService: AviaticketsServicing {
@@ -187,6 +188,21 @@ class AviaticketsMockService: AviaticketsServicing {
                    handLuggage: HandLuggage(hasHandLuggage: false),
                    isReturnable: false,
                    isExchangable: false),
+        ])
+        completion(.success(response))
+    }
+    
+    func getRecommendedTowns(completion: @escaping (Result<RecommendedTownResponse, Error>) -> Void) {
+        let response = RecommendedTownResponse(towns: [
+            RecommendedTown(id: 1, 
+                            town: "Стамбул",
+                            comment: "Популярное направление"),
+            RecommendedTown(id: 2, 
+                            town: "Сочи",
+                            comment: "Популярное направление"),
+            RecommendedTown(id: 3, 
+                            town: "Пхукет",
+                            comment: "Популярное направление"),
         ])
         completion(.success(response))
     }

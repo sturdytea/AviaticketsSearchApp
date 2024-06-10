@@ -15,6 +15,7 @@ class AviaticketsViewController: UIViewController {
 
     private lazy var aviaticketsView = AviaticketsView()
     private lazy var viewModel = AviaticketsViewModel(service: AviaticketsMockService())
+    var showSearchRequested: () -> () = { }
     
     override func loadView() {
         view = aviaticketsView
@@ -24,12 +25,12 @@ class AviaticketsViewController: UIViewController {
         super.viewDidLoad()
         viewModel.fetchData()
         setupCollectionView()
-        aviaticketsView.inputBox.arrivalField.addTarget(self, action: #selector(arrivalFieldTapped), for: .allTouchEvents)
+        aviaticketsView.inputBox.arrivalField.addTarget(self, action: #selector(arrivalFieldTapped), for: .touchDown)
     }
     
     @objc
     private func arrivalFieldTapped() {
-        print("Tapped")
+        showSearchRequested()
     }
 }
 
